@@ -1,10 +1,10 @@
 const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
 
-const giftButtons = document.querySelectorAll(".gift-btn");
+const giftButtons = document.querySelectorAll(".santa-btn");
 
 const clickGift = (e) => {
     console.log(e.target.src)
-    e.target.src = "images/santa-claus.png"
+    e.target.style.visibility = "hidden"
 }
 
 const changeBackground = (e) => {
